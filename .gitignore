@@ -1,3 +1,8 @@
+templates/
+    index.html
+static/
+    sttle.css
+    script.js
 __pycache__/
 *.pyc
 *.pyo
