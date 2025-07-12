@@ -4,4 +4,4 @@ To jest prosta aplikacja w Pythonie z użyciem Flask. Hostowana za darmo na Rend
 
 ## Jak działa?
 
-Po wejściu na stronę zobaczysz napis: `Hello from Flask!`
+po wejśću masz web
