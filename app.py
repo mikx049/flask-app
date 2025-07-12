@@ -26,13 +26,12 @@ def shell():
     return render_template_string("""
         <h2>🖥️ Web Shell (chroniony hasłem)</h2>
         <form method="POST">
-            Hasło: <input type="password" name="haslo"><br><br>
-            Komenda: <input type="text" name="cmd" value="{{cmd}}" style="width:300px;">
+            Hasło: <input type="password" name="haslo" required><br><br>
+            Komenda: <input type="text" name="cmd" value="{{cmd}}" style="width:300px;" required>
             <input type="submit" value="Wykonaj"><br><br>
         </form>
         <pre>{{ wynik }}</pre>
     """, wynik=wynik, cmd=cmd)
-
 
 if __name__ == "__main__":
     app.run()
