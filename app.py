@@ -25,6 +25,7 @@ def shell():
 
     return render_template_string("""
         <h2>🖥️ Web Shell (chroniony hasłem)</h2>
+        <style>body{background-color: #303030; color: #ffffff;}</style>
         <form method="POST">
             Hasło: <input type="password" name="haslo" required><br><br>
             Komenda: <input type="text" name="cmd" value="{{cmd}}" style="width:300px;" required>
