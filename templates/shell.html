@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shell</title>
+</head>
+<body>
+    <h2>🖥️ Web Shell (chroniony hasłem)</h2>
+    <style>body{background-color: #303030; color: #ffffff;}</style>
+    <form method="POST">
+        Hasło: <input type="password" name="haslo" required><br><br>
+        Komenda: <input type="text" name="cmd" value="{{cmd}}" style="width:300px;" required>
+        <input type="submit" value="Wykonaj"><br><br>
+    </form>
+    <pre>{{ wynik }}</pre>
+</body>
+</html>
