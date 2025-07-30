@@ -23,16 +23,7 @@ def shell():
         else:
             wynik = "❌ Błędne hasło!"
 
-    return render_template_string("""
-        <h2>🖥️ Web Shell (chroniony hasłem)</h2>
-        <style>body{background-color: #303030; color: #ffffff;}</style>
-        <form method="POST">
-            Hasło: <input type="password" name="haslo" required><br><br>
-            Komenda: <input type="text" name="cmd" value="{{cmd}}" style="width:300px;" required>
-            <input type="submit" value="Wykonaj"><br><br>
-        </form>
-        <pre>{{ wynik }}</pre>
-    """, wynik=wynik, cmd=cmd)
+    return render_template("shell.html", wynik=wynik, cmd=cmd)
 
 if __name__ == "__main__":
     app.run()
