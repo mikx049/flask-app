@@ -1,5 +1,6 @@
 templates/
     index.html
+    shell.html
 static/
     sttle.css
     script.js
